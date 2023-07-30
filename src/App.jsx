@@ -1,12 +1,16 @@
 import React from 'react'
-
+import './App.css';
+import Navbar from './components/Header/Navbar'
+import Products from './components/products/Products'
+import SideBar from './components/sidebar/SideBar'
 const App = () => {
   return (
     <div>
-        <h1>App</h1>
-        <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iste sapiente facere minus excepturi ipsam, eveniet repellendus nisi blanditiis at libero itaque iure illo hic inventore? Recusandae eveniet vitae nobis, laborum corrupti magnam ex incidunt asperiores, ipsam veniam fugit vero non cum aliquam. Mollitia eum ratione voluptas similique. Minus, dicta adipisci.
-        </p>
+      <Navbar/>
+      <main className='main-container lg:mx-20 md:mx-10 mx-2 relative'>
+       <Products/>
+       <SideBar/>
+      </main>
     </div>
   )
 }
