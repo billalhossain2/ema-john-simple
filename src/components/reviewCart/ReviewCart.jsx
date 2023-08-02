@@ -1,12 +1,11 @@
 import React from "react";
-import "./SideBar.css";
 import getTotalPrice from "../../utilities/getTotalPrice";
 import getTotalShippingCost from "../../utilities/getTotalShippingCost";
 import getTaxRate from "../../utilities/getTaxRate";
 import getGrandTotal from "../../utilities/getGrandTotal";
 import clearStorage from "../../../storage/clearStorage";
 import Modal from "../modal/Modal";
-const SideBar = ({items, setItems, status}) => {
+const ReviewCart = ({items, setItems}) => {
   const clearCart = ()=>{
     // setIsOpen(!isOpen)
     const isClear = confirm('Are you sure to clear ?');
@@ -32,8 +31,8 @@ const SideBar = ({items, setItems, status}) => {
               Clear Cart <i className="fa-solid fa-trash-can"></i>
             </button>
             <br />
-            <button className="btn bg-[#FF9900] w-full text-white hover:bg-[#ce8518]">
-              {status ? status : 'Review Order'} <i className="fa-solid fa-arrow-right"></i>
+            <button className="btn bg-[#FF9900] w-full text-white hover:bg-[#ce8518] text-[10px]">
+              Proceed to checkout <i className="fa-solid fa-arrow-right"></i>
             </button>
           </div>
         </div>
@@ -42,4 +41,4 @@ const SideBar = ({items, setItems, status}) => {
   );
 };
 
-export default SideBar;
+export default ReviewCart;
