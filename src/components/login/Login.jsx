@@ -18,6 +18,9 @@ const Login = () => {
         <div>
           <button className="w-full btn hover:bg-white bg-white"><i class="fa-brands fa-google"></i> <span>Continue with Google</span></button>
         </div>
+        <div>
+        <button className="w-full btn hover:bg-white bg-white mt-5"><i class="fa-brands fa-facebook-f"></i> <span>Login with facebook</span></button>
+        </div>
       </form>
      </div>
     </div>
